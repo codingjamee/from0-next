@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "ES5",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowjs": true,
+    "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
