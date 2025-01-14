@@ -6,7 +6,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  styledComponents: true,
 };
 
 module.exports = nextConfig;
