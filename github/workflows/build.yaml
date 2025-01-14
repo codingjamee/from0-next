@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runss-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -16,7 +16,7 @@ jobs:
           node-version: 16
       - name: "install dependencies"
         working-directory: ./
-        run: pnpm ci
+        run: pnpm install
       - name: "build"
         working-directory: ./
         run: pnpm run build
