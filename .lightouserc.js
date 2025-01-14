@@ -7,7 +7,7 @@ module.exports = {
       },
     },
     upload: {
-      statrtServerCommand: "pnpm run dev",
+      startServerCommand: "pnpm run dev",
       target: "templorary-public-storage",
     },
   },
