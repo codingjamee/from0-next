@@ -17,6 +17,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+        # pnpm 설치 단계 추가
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8 # 사용하는 pnpm 버전
       - name: "install dependencies"
         working-directory: ./
         run: pnpm install
