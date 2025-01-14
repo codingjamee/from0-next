@@ -14,13 +14,16 @@ jobs:
         with:
           version: 8 # 사용하는 pnpm 버전
 
+      - name: Install Dependencies
+        run: pnpm install
+
       # 프로젝트 빌드
       - name: Build project
         run: pnpm run build
 
       - name: run Lighthouse CI
-        run : |
+        run: |
           pnpm install -g @lhci/cli@0.8.x
           lhci autorun
-        env :
-            LHCI_GITHUB_APP_TOKEN: #{{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        env:
+          LHCI_GITHUB_APP_TOKEN: #{{ secrets.LHCI_GITHUB_APP_TOKEN }}
